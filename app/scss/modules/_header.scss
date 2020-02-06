@@ -1,0 +1,188 @@
+header {
+  position: relative;
+}
+.nav {
+  @include pos(fixed, $t: 0, $l: 0, $z: 99);
+  width: 100%;
+  height: 70px;
+  background: $blue;
+  overflow: hidden;
+
+  @media (max-width: $mobile) {
+    position: static;
+    background: $blue;
+  }
+
+  &__logo {
+    width: 50px;
+    margin: 10px auto;
+    @media (min-width: $mobile) {
+      display: none;
+    }
+  }
+  &__logo .icon {
+    width: 50px;
+    height: 50px;
+  }
+}
+.navigation__menu {
+  @include pos(fixed, $t: 5px, $l: 3%, $z: 99);
+  background: none;
+  padding: 10px;
+  transition: all 0.3s;
+
+  @media (min-width: $desktop) {
+    display: none;
+  }
+}
+.navigation__input {
+  display: none;
+  &:checked {
+    + .navigation__menu {
+      .burger-menu {
+        span {
+          display: none;
+        }
+        &::before {
+          transform: rotate(45deg);
+          left: 3px;
+        }
+        &::after {
+          transform: rotate(-45deg);
+          left: 3px;
+        }
+      }
+    }
+    ~ .menu {
+      right: 0px;
+    }
+  }
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  font-weight: 300;
+  background-color: $blue;
+  @media (max-width: $mobile) {
+    @include pos(fixed, $z: 1, $t: 0, $r: -250px);
+    @include size(250px, 100%);
+    background: #fff;
+    display: block;
+    transition: all 0.3s;
+    padding-top: 25px;
+  }
+
+  &__item {
+    font: 17px;
+    text-transform: uppercase;
+    margin: 0 30px;
+    text-align: center;
+
+    @media (max-width: $mobile) {
+      margin: 0;
+    }
+    &:hover {
+      background-color: $hoverList;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    padding: 25px 0;
+    display: inline-block;
+    transition: all 0.3s;
+
+    @media (max-width: $desktop) {
+      display: block;
+      padding: 20px 0;
+      font-size: 17px;
+      color: #fff;
+    }
+    @media (max-width: $mobile) {
+      color: #333;
+    }
+    &:hover {
+      text-decoration: none;
+      color: $tag;
+    }
+  }
+}
+
+.burger-menu {
+  @mixin line($top: 0) {
+    @include size(100%, 6px);
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: $top;
+    transition: all 0.5s;
+  }
+  @include size(50px, 40px);
+  display: block;
+  position: relative;
+  @media (min-width: $mobile) {
+    display: none;
+  }
+
+  &::before {
+    @include line();
+    content: "";
+    transform-origin: 0 0;
+  }
+  &::after {
+    @include line(calc(100% - 6px));
+    content: "";
+    transform-origin: 0 100%;
+  }
+  span {
+    @include line(50%);
+
+    display: block;
+    transform: translateY(-50%);
+  }
+}
+
+//main content///////////////////////////////
+.main {
+  padding: 1px 20px 1px 20px;
+  background: url("/images/head_bg.jpg") no-repeat;
+  background-size: contain;
+  height: 100vh;
+  @media (min-width: $mobile) {
+    background: url("/images/head_desc_bg.jpg") no-repeat top center;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.15px;
+    margin: 70px 0 60px;
+    @media (min-width: $desktop) {
+      margin: 150px 0 60px;
+    }
+  }
+  &__desc {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 10px;
+    padding-bottom: 1px;
+  }
+  &__button {
+    font-weight: 400;
+    font-size: 14px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    background-color: $blue;
+    display: inline-block;
+    margin-top: 50px;
+    &:hover {
+      background: $tag;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.info {
+  &__line {
+    width: 40%;
+    margin: 20px 30% 20px 30%;
+    height: 1px;
+    background-color: $blue;
+    text-align: center;
+  }
+  &__svg {
+    text-align: center;
+  }
+  &__svg .icon {
+    width: 100px;
+    display: inline-block;
+  }
+  &__desc {
+    font-size: 14px;
+    padding: 0 60px 0 60px;
+    margin-bottom: 60px;
+  }
+
+  &__num {
+    color: $blue;
+  }
+}

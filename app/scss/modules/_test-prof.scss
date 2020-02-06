@@ -1,0 +1,26 @@
+.jstest {
+  &__box {
+  }
+  &__imgbox {
+    @media (max-width: $desktop) {
+      display: none;
+    }
+  }
+  &__img {
+  }
+  &__box {
+  }
+  &__icon {
+  }
+  &__title {
+  }
+  &__button {
+    padding: 10px 15px;
+    border-radius: 20px;
+    background-color: $blue;
+    color: #fff;
+    &:hover {
+      background-color: $tag;
+    }
+  }
+}

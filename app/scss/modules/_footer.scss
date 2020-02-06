@@ -1,0 +1,32 @@
+.footer {
+  background-color: $blue;
+  color: #fff;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  @media (min-width: $mobile) {
+    flex-wrap: nowrap;
+  }
+  &__menu {
+    @media (min-width: $mobile) {
+      display: flex;
+      align-items: center;
+
+      .footer__item {
+        margin: 0 10px;
+      }
+    }
+  }
+  &__item {
+    margin: 5px;
+    &:hover a {
+      color: $tag;
+    }
+  }
+  &__link {
+    font-weight: 500;
+    font-size: 11px;
+  }
+}

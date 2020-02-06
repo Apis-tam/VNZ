@@ -1,0 +1,87 @@
+.university {
+  height: 100vh;
+  width: 100%;
+  padding: 1px 0;
+  margin: 50px 0;
+  // buuton blue
+  &__box {
+    margin: 30px 0;
+    text-align: center;
+  }
+  &__title {
+    font-size: 18px;
+  }
+  &__link {
+    margin: 40px 0;
+    text-align: center;
+    //end blue button
+  }
+  &__button {
+    background-color: $blue;
+    padding: 5px 10px;
+    border-radius: 20px;
+
+    &:hover {
+      background-color: $tag;
+    }
+  }
+}
+.uslider {
+  width: 100%;
+  &__item {
+    background-color: $bgGrey;
+    margin: 30px;
+    box-shadow: 0px 2px 5px 0px #000;
+    max-width: 280px;
+    min-width: 280px;
+    @media (min-width: $desktop) {
+      display: flex !important;
+      width: 510px;
+      max-width: 510px;
+    }
+  }
+  &__img {
+    width: 100%;
+  }
+  &__info {
+    margin: 10px;
+    position: relative;
+  }
+  &__title {
+    color: $blue;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+  &__adress {
+    color: #000;
+    padding-bottom: 30px;
+  }
+  &__link {
+    @include pos($b: 5px, $l: 5px);
+    font-size: 12px;
+    color: $blue;
+
+    display: inline-block;
+    &:hover {
+      color: $hoverList;
+    }
+  }
+}
+//slider dots///////////////////////////////
+.slick-dots {
+  display: flex;
+  justify-content: center;
+}
+.slick-dots li {
+  margin: 0 5px;
+}
+.slick-dots li button:before {
+  content: url("/../images/dot.png");
+}
+button {
+  font-size: 0px;
+}
+.slick-dots .slick-active button:before {
+  content: url("/../images/dot-active.png");
+}
