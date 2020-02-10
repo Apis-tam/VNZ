@@ -1,26 +1,60 @@
 .jstest {
-  &__box {
-  }
   &__imgbox {
-    @media (max-width: $desktop) {
+    overflow: hidden;
+  }
+  &__img {
+    max-width: 491px;
+    @media (max-width: $mobile) {
       display: none;
     }
   }
-  &__img {
-  }
   &__box {
+    display: flex;
+    @media (max-width: $mobile) {
+      margin-top: 100px;
+    }
   }
   &__icon {
+    width: 50px;
+    fill: $blue;
   }
   &__title {
+    font-weight: 500;
+    font-size: 18px;
+    margin: 20px 0;
+    @media (min-width: $mobile) {
+      margin-top: 40px;
+    }
+  }
+  &__test {
+    display: flex;
+    flex-direction: column;
   }
   &__button {
-    padding: 10px 15px;
+    width: 180px;
+    height: 32px;
     border-radius: 20px;
     background-color: $blue;
     color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 40px auto;
     &:hover {
       background-color: $tag;
     }
   }
+}
+.jstest li {
+  margin: 10px 0;
+}
+.jstest span {
+  display: block;
+  margin: 15px 0;
+}
+form p {
+  margin: 5px;
+}
+.quiz__ul {
+  list-style-type: decimal;
+  margin-left: 20px;
 }
