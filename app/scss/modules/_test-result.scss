@@ -1,0 +1,27 @@
+.result {
+  width: 100%;
+  height: 100vh;
+  &__title {
+    margin: 140px 0 20px 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+  }
+  &__box {
+    display: flex;
+  }
+
+  &__math {
+    text-align: center;
+    background-color: $bgGrey;
+    padding: 10px;
+    height: 100%;
+  }
+  &__fantasy {
+    background-color: $bgGrey;
+    text-align: center;
+    padding: 10px;
+    height: 100%;
+  }
+}
