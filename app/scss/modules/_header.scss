@@ -9,7 +9,7 @@ header {
   overflow: hidden;
 
   @media (max-width: $mobile) {
-    position: static;
+    position: fixed;
     background: $blue;
   }
 

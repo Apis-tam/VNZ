@@ -79,6 +79,29 @@ a:hover {
   color: #fff;
   text-decoration: none; }
 
+.title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px; }
+
+.text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px; }
+
+.button {
+  font-weight: 400;
+  font-size: 14px;
+  padding: 10px 15px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  background-color: #4054b2;
+  display: inline-block; }
+  .button:hover {
+    background: #8c9eff; }
+
 header {
   position: relative; }
 
@@ -93,7 +116,7 @@ header {
   overflow: hidden; }
   @media (max-width: 767px) {
     .nav {
-      position: static;
+      position: fixed;
       background: #4054b2; } }
   .nav__logo {
     width: 50px;
@@ -497,6 +520,46 @@ button {
     margin-bottom: 100px; }
     .mail__button:hover {
       background-color: #8c9eff; }
+
+.header {
+  display: -webkit-box;
+  display: flex;
+  margin: 155px 0 35px; }
+  @media (max-width: 767px) {
+    .header {
+      margin: 110px 0 10px; } }
+  .header__logo {
+    height: 85px;
+    margin-right: 20px; }
+    @media (max-width: 767px) {
+      .header__logo {
+        height: 60px; } }
+  .header__title {
+    margin-bottom: 15px;
+    font-weight: 700; }
+  @media (max-width: 767px) {
+    .header__subtitle {
+      display: none; } }
+
+.picture {
+  max-width: 1200px;
+  height: 1000px;
+  background: url("/images/univer.jpg") no-repeat;
+  background-size: contain; }
+  @media (max-width: 767px) {
+    .picture {
+      background: url("/images/univer-mobile.jpg") no-repeat; } }
+
+.link {
+  position: relative;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%); }
+
+.info__svg {
+  display: -webkit-box;
+  display: flex; }
 
 .jstest span {
   display: block;

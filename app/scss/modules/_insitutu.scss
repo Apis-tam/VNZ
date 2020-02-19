@@ -1,0 +1,51 @@
+    .header {
+        display: flex;
+        margin: 155px 0 35px;
+        @media(max-width: $mobile) {
+            margin: 110px 0 10px;
+        }
+
+        &__logo {
+            height: 85px;
+            margin-right: 20px;
+            @media(max-width: $mobile) {
+                height: 60px;
+            }
+        }
+        
+        &__title {
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        &__subtitle {
+            @media(max-width: $mobile) {
+                display: none;
+            }
+        }
+    }
+
+
+    .picture {
+        max-width: 1200px;
+        height: 1000px;
+        background: url("/images/univer.jpg") no-repeat;
+        background-size: contain;
+
+        @media(max-width: $mobile) {
+            background: url("/images/univer-mobile.jpg") no-repeat;
+        }
+    }
+    
+    .link {
+        position: relative;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .info {
+        &__svg {
+            display: flex ;
+        }
+    }
