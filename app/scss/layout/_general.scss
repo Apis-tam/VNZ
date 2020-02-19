@@ -37,3 +37,30 @@ a:hover {
   color: #fff;
   text-decoration: none;
 }
+
+.title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.button {
+  font-weight: 400;
+  font-size: 14px;
+  padding: 10px 15px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  background-color: $blue;
+  display: inline-block;
+  &:hover {
+    background: $tag;
+  }
+}
