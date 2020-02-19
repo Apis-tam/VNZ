@@ -506,68 +506,43 @@ button {
     .mail__button:hover {
       background-color: #8c9eff; }
 
-.institut .header {
+.header {
   display: -webkit-box;
   display: flex;
   margin: 155px 0 35px; }
   @media (max-width: 767px) {
-    .institut .header {
+    .header {
       margin: 110px 0 10px; } }
-  .institut .header__logo {
+  .header__logo {
     height: 85px;
     margin-right: 20px; }
     @media (max-width: 767px) {
-      .institut .header__logo {
+      .header__logo {
         height: 60px; } }
-  .institut .header__title {
+  .header__title {
     margin-bottom: 15px;
     font-weight: 700; }
   @media (max-width: 767px) {
-    .institut .header__subtitle {
+    .header__subtitle {
       display: none; } }
 
-.institut .picture {
+.picture {
   max-width: 1200px;
-  max-height: 1000px;
-  display: grid;
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: repeat(6, 1fr); }
+  height: 1000px;
+  background: url("/images/univer.jpg") no-repeat;
+  background-size: contain; }
   @media (max-width: 767px) {
-    .institut .picture .mobileimg {
-      height: 115px !important; } }
-  .institut .picture .img--1 {
-    width: 100%;
-    height: 100%;
-    grid-row: 1;
-    grid-column: 1 / 4; }
-  .institut .picture .img--2 {
-    width: 100%;
-    grid-row: 1;
-    grid-column: 4 / 7; }
-  .institut .picture .img--3 {
-    width: 100%;
-    height: 170px;
-    grid-row: 2;
-    grid-column: 1 / 3; }
-  .institut .picture .img--4 {
-    width: 100%;
-    height: 170px;
-    grid-row: 2;
-    grid-column: 3 / 5; }
-  .institut .picture .img--5 {
-    width: 100%;
-    height: 170px;
-    grid-row: 2;
-    grid-column: 5 / 7; }
+    .picture {
+      background: url("/images/univer-mobile.jpg") no-repeat; } }
 
-.institut__button {
+.link {
   position: relative;
   top: 0;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%); }
 
-.institut .info__svg {
+.info__svg {
   display: -webkit-box;
   display: flex; }
 
@@ -682,14 +657,39 @@ label:hover {
     text-align: center; }
   .result__box {
     display: -webkit-box;
-    display: flex; }
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    margin-bottom: 20px; }
   .result__math {
+    line-height: 30px;
     text-align: center;
     background-color: #fafafa;
     padding: 10px;
-    height: 100%; }
+    height: 121px; }
   .result__fantasy {
     background-color: #fafafa;
     text-align: center;
     padding: 10px;
-    height: 100%; }
+    height: 121px;
+    line-height: 30px; }
+  .result__math--text {
+    padding: 10px; }
+  .result__math--text p {
+    margin-bottom: 5px; }
+  .result__fantasy--text {
+    padding: 10px; }
+  .result__fantasy--text p {
+    margin-bottom: 5px; }
+  .result__prof {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center; }
+  .result__button {
+    margin-right: 20px;
+    background-color: #4054b2;
+    border-radius: 20px;
+    padding: 10px 20px; }
+    .result__button:hover {
+      background-color: #8c9eff; }

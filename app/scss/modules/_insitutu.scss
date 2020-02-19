@@ -1,4 +1,3 @@
-.institut {
     .header {
         display: flex;
         margin: 155px 0 35px;
@@ -29,49 +28,16 @@
 
     .picture {
         max-width: 1200px;
-        max-height: 1000px;
-        display: grid;
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-columns: repeat(6, 1fr);
-        
-        .mobileimg {
-            @media(max-width: $mobile) {
-                height: 115px !important;
-            }
-        }
+        height: 1000px;
+        background: url("/images/univer.jpg") no-repeat;
+        background-size: contain;
 
-        .img--1 {
-            width: 100%;
-            height: 100%;
-            grid-row: 1;
-            grid-column: 1 / 4;
-        }
-        .img--2 {
-            width: 100%;
-            grid-row: 1;
-            grid-column: 4 / 7;
-        }
-        .img--3 {
-            width: 100%;
-            height: 170px;
-            grid-row: 2;
-            grid-column: 1 / 3;
-        }
-        .img--4 {
-            width: 100%;
-            height: 170px;
-            grid-row: 2;
-            grid-column: 3 / 5;
-        }
-        .img--5 {
-            width: 100%;
-            height: 170px;
-            grid-row: 2;
-            grid-column: 5 / 7;
+        @media(max-width: $mobile) {
+            background: url("/images/univer-mobile.jpg") no-repeat;
         }
     }
     
-    &__button {
+    .link {
         position: relative;
         top: 0;
         left: 50%;
@@ -83,4 +49,3 @@
             display: flex ;
         }
     }
-}
