@@ -39,6 +39,9 @@
           "<p>У Вас творчий склад розуму. Люди з таким складом розуму віддають перевагу творчості та комунікаціям.</p><p>Творчисть, фантазія та натхнення - це те, чим краще керуються такі люди. </p>";
       }
       //show choose button about prof///////////////////////
+      let drowMail = JSON.parse(localStorage.getItem("mail"));
+      console.log(drowMail);
+      $(".drow__mail")[0].innerText = drowMail;
       $.ajax({
         url: `https://my-json-server.typicode.com/Apis-tam/vnzProfDb/prof`,
         type: "GET"
@@ -50,7 +53,7 @@
     }
     function profFn(num) {
       let profDOM = ` <a href="${num.link}" class="result__button">${num.name}</a>`;
-      console.log(num.name);
+
       return profDOM;
     }
     ///end funcRes
@@ -96,7 +99,19 @@
 
       ///////////////////////////////////////////////
     });
+    ///button go to test
 
+    $(".mail__button").on("click", () => {
+      let input = $(".mail__input").val();
+
+      if (input != "") {
+      } else {
+        return;
+      }
+      localStorage.setItem("mail", JSON.stringify(input));
+      window.location.href = "test-prof.html";
+    });
+    ///end button go to test
     //slider
     $(".uslider").slick({
       mobileFirst: true,
@@ -104,7 +119,6 @@
       infinite: false,
       speed: 300,
       rows: 1,
-      slidesPerRow: 1,
       slidesToShow: 2,
       slidesToScroll: 1,
       responsive: [
@@ -113,26 +127,20 @@
           settings: {
             slidesToShow: 2,
             slidesToScroll: 1,
-            rows: 1,
-            slidesPerRow: 1,
             infinite: true,
             dots: true
           }
         },
         {
-          breakpoint: 600,
+          breakpoint: 840,
           settings: {
-            rows: 1,
-            slidesPerRow: 1,
             slidesToShow: 1,
             slidesToScroll: 1
           }
         },
         {
-          breakpoint: 480,
+          breakpoint: 280,
           settings: {
-            rows: 1,
-            slidesPerRow: 1,
             slidesToShow: 1,
             slidesToScroll: 1
           }

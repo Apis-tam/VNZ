@@ -39,19 +39,18 @@
 
           <ul class="menu">
             <li class="menu__item">
-              <a href="#" class="menu__link"> Головна</a>
+              <a href="index.html" class="menu__link"> Головна</a>
             </li>
             <li class="menu__item">
               <a href="test.html" class="menu__link">Тест</a>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link"> Університети</a>
+              <a href="index.html#university" class="menu__link">
+                Університети</a
+              >
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link"> Спеціальності</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link"> Вхід</a>
+              <a href="index.html#prof" class="menu__link"> Спеціальності</a>
             </li>
           </ul>
         </div>
@@ -64,7 +63,12 @@
           <h1>Залиш свою електронну пошту, для отримання результатів тесту</h1>
         </div>
         <form action="#" class="mail__form">
-          <input type="mail" class="mail__input" placeholder="e-mail" />
+          <input
+            type="email"
+            class="mail__input"
+            placeholder="e-mail"
+            required
+          />
           <div class="mail__box">
             <input type="checkbox" class="mail__checkbox" name="checkbox" />
             <label for="checkbox" class="mail__label"
