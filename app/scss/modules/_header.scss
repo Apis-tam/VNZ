@@ -26,7 +26,7 @@ header {
   }
 }
 .navigation__menu {
-  @include pos(fixed, $t: 5px, $l: 3%, $z: 99);
+  @include pos(fixed, $t: 5px, $r: 3%, $z: 99);
   background: none;
   padding: 10px;
   transition: all 0.3s;
@@ -39,6 +39,7 @@ header {
   display: none;
   &:checked {
     + .navigation__menu {
+      right: 250px;
       .burger-menu {
         span {
           display: none;
@@ -81,9 +82,9 @@ header {
 
     @media (max-width: $mobile) {
       margin: 0;
-    }
-    &:hover {
-      background-color: $hoverList;
+      .menu__item:hover {
+        background-color: $hoverList;
+      }
     }
   }
 
@@ -103,10 +104,19 @@ header {
     }
     @media (max-width: $mobile) {
       color: #333;
+      transform: scale(1);
     }
     &:hover {
       text-decoration: none;
-      color: $tag;
+      color: #fff;
+      background-color: $blue;
+      font-weight: 400;
+      transform: scale(1.1);
+      @media (max-width: $mobile) {
+        color: #333;
+        transform: scale(1);
+        background-color: $hoverList;
+      }
     }
   }
 }
@@ -150,9 +160,12 @@ header {
   padding: 1px 20px 1px 20px;
   background: url("/images/head_bg.jpg") no-repeat;
   background-size: contain;
-  height: 100vh;
+  min-height: 50vh;
+  background-size: cover;
   @media (min-width: $mobile) {
+    height: 100vh;
     background: url("/images/head_desc_bg.jpg") no-repeat top center;
+    background-size: cover;
   }
 
   &__title {
