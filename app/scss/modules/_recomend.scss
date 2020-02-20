@@ -1,0 +1,37 @@
+.list {
+    margin: 130px 0;
+    &__title {
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+    .univer {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 70px;
+        
+        &__svg {
+            display: flex;
+            width: 300px;
+            background-color: #fafafa;
+            box-shadow: 0px 2px 5px 0px #000;
+            padding: 15px;
+            
+            .icon {
+                margin-right: 20px;
+                height: 100px;
+                width: 100px;
+            }
+        }
+
+        &__text {
+            font-size: 24px;
+            margin-top: 10%;
+
+            a {
+                font-size: 14px;
+                color: $blue;
+            }
+        }            
+    }
+}
