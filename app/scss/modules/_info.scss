@@ -8,15 +8,19 @@
   }
   &__svg {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   &__svg .icon {
     width: 100px;
-    display: inline-block;
+    display: block;
   }
   &__desc {
     font-size: 14px;
     padding: 0 60px 0 60px;
     margin-bottom: 60px;
+    display: block;
   }
 
   &__num {
