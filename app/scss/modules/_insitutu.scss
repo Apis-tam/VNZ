@@ -27,25 +27,111 @@
 
 
     .picture {
-        max-width: 1200px;
-        height: 1000px;
         background: url("/images/univer.jpg") no-repeat;
-        background-size: contain;
+        background-size: 100%;
+        height: 200vh;        
+        max-height: 920px;
+        margin-bottom: 100px;
 
         @media(max-width: $mobile) {
             background: url("/images/univer-mobile.jpg") no-repeat;
+            height: 820px;
         }
-    }
-    
-    .link {
-        position: relative;
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
+
+        &__button {
+            position: relative;
+            top: calc(100% + 50px);
+            left: 50%;
+            transform: translateX(-50%);
+        }
     }
 
     .info {
+        display: flex;
+        justify-content: space-between;
+
+        @media(max-width: $mobile) {
+            flex-direction: column;
+        }
+
         &__svg {
             display: flex ;
+            justify-content: space-between;
+            margin-bottom: 35px;
+
+            .icon {
+                margin-right: 10px;
+                height: 45px;
+                width: 45px;
+            }
+        }
+
+        &__text {
+            width: 250px;
+            border-bottom: 1px #111111 solid;
+            text-align: left;
+            
+            a {
+                font-size: 14px;
+                color: $blue;
+            }
         }
     }
+
+    .caption {
+        &__title {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        @media(max-width: $mobile) {
+           display: none;
+        }
+
+        .isputania {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 70px;
+            
+            &__svg {
+                display: flex;
+                width: 300px;
+                background-color: #fafafa;
+                box-shadow: 0px 2px 5px 0px #000;
+                padding: 15px;
+                
+                .icon {
+                    margin-right: 20px;
+                    height: 100px;
+                    width: 100px;
+                }
+            }
+
+            &__text {
+                font-size: 24px;
+                margin-top: 10%;
+            }            
+        }
+
+        &__subtitle {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        &__text {
+            margin-bottom: 19px;
+            font-size: 14px;
+            span {
+                margin-right: 20px;
+            }
+        }
+
+        &__button {
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-bottom: 120px;
+        }
+    }
+    
+

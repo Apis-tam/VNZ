@@ -104,6 +104,10 @@ a:hover {
   .button:hover {
     background: #8c9eff; }
 
+.footer {
+  position: relative;
+  bottom: 0; }
+
 header {
   position: relative; }
 
@@ -569,24 +573,95 @@ button {
       display: none; } }
 
 .picture {
-  max-width: 1200px;
-  height: 1000px;
   background: url("/images/univer.jpg") no-repeat;
-  background-size: contain; }
+  background-size: 100%;
+  height: 200vh;
+  max-height: 920px;
+  margin-bottom: 100px; }
   @media (max-width: 767px) {
     .picture {
-      background: url("/images/univer-mobile.jpg") no-repeat; } }
+      background: url("/images/univer-mobile.jpg") no-repeat;
+      height: 820px; } }
+  .picture__button {
+    position: relative;
+    top: calc(100% + 50px);
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); }
 
-.link {
+.info {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between; }
+  @media (max-width: 767px) {
+    .info {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+              flex-direction: column; } }
+  .info__svg {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 35px; }
+    .info__svg .icon {
+      margin-right: 10px;
+      height: 45px;
+      width: 45px; }
+  .info__text {
+    width: 250px;
+    border-bottom: 1px #111111 solid;
+    text-align: left; }
+    .info__text a {
+      font-size: 14px;
+      color: #4054b2; }
+
+.caption__title {
+  text-align: center;
+  margin-bottom: 35px; }
+
+@media (max-width: 767px) {
+  .caption {
+    display: none; } }
+
+.caption .isputania {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 70px; }
+  .caption .isputania__svg {
+    display: -webkit-box;
+    display: flex;
+    width: 300px;
+    background-color: #fafafa;
+    box-shadow: 0px 2px 5px 0px #000;
+    padding: 15px; }
+    .caption .isputania__svg .icon {
+      margin-right: 20px;
+      height: 100px;
+      width: 100px; }
+  .caption .isputania__text {
+    font-size: 24px;
+    margin-top: 10%; }
+
+.caption__subtitle {
+  text-align: center;
+  margin-bottom: 20px; }
+
+.caption__text {
+  margin-bottom: 19px;
+  font-size: 14px; }
+  .caption__text span {
+    margin-right: 20px; }
+
+.caption__button {
   position: relative;
-  top: 0;
   left: 50%;
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%); }
-
-.info__svg {
-  display: -webkit-box;
-  display: flex; }
+          transform: translateX(-50%);
+  margin-bottom: 120px; }
 
 .jstest span {
   display: block;
@@ -748,3 +823,32 @@ label:hover {
   font-size: 18px;
   font-weight: 500;
   line-height: 25px; }
+
+.list {
+  margin: 130px 0; }
+  .list__title {
+    text-align: center;
+    margin-bottom: 35px; }
+  .list .univer {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 70px; }
+    .list .univer__svg {
+      display: -webkit-box;
+      display: flex;
+      width: 300px;
+      background-color: #fafafa;
+      box-shadow: 0px 2px 5px 0px #000;
+      padding: 15px; }
+      .list .univer__svg .icon {
+        margin-right: 20px;
+        height: 100px;
+        width: 100px; }
+    .list .univer__text {
+      font-size: 24px;
+      margin-top: 10%; }
+      .list .univer__text a {
+        font-size: 14px;
+        color: #4054b2; }
