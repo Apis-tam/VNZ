@@ -3,7 +3,9 @@
 (function($) {
   $(document).ready(function() {
     // Code
-    if (window.location.href === "http://localhost:9000/test-result.html") {
+    let locate = window.location.pathname.split("/"),
+      index = +locate.length - 1;
+    if (locate[index] === "test-result.html") {
       resultFn();
     }
     function resultFn() {
@@ -103,13 +105,16 @@
 
     $(".mail__button").on("click", () => {
       let input = $(".mail__input").val();
-
-      if (input != "") {
+      function vaalidateEmail(input) {
+        let valid = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return valid.test(input);
+      }
+      if (vaalidateEmail(input)) {
+        localStorage.setItem("mail", JSON.stringify(input));
+        window.location.href = "test-prof.html";
       } else {
         return;
       }
-      localStorage.setItem("mail", JSON.stringify(input));
-      window.location.href = "test-prof.html";
     });
     ///end button go to test
     //slider

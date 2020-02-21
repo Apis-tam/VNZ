@@ -94,7 +94,17 @@ header {
     position: relative;
     padding: 25px 0;
     display: inline-block;
-    transition: all 0.3s;
+    transition: all 0.4s;
+
+    &::before {
+      position: absolute;
+      top: 70px;
+      left: 50%;
+      content: "";
+      width: 0;
+      height: 2px;
+      background-color: #fff;
+    }
 
     @media (max-width: $desktop) {
       display: block;
@@ -110,11 +120,19 @@ header {
       text-decoration: none;
       color: #fff;
       background-color: $blue;
-      font-weight: 400;
-      transform: scale(1.1);
+
+      &::before {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        content: "";
+        width: calc(100% + 4px);
+        height: 2px;
+        background-color: #fff;
+      }
+
       @media (max-width: $mobile) {
         color: #333;
-        transform: scale(1);
         background-color: $hoverList;
       }
     }
@@ -157,6 +175,7 @@ header {
 
 //main content///////////////////////////////
 .main {
+  margin-top: 50px;
   padding: 1px 20px 1px 20px;
   background: url("/images/head_bg.jpg") no-repeat;
   background-size: contain;
@@ -173,7 +192,7 @@ header {
     font-size: 18px;
     line-height: 21px;
     letter-spacing: 0.15px;
-    margin: 70px 0 60px;
+    margin: 120px 0 60px;
     @media (min-width: $desktop) {
       margin: 150px 0 60px;
     }
@@ -196,6 +215,9 @@ header {
     margin-top: 50px;
     &:hover {
       background: $tag;
+    }
+    @media (max-width: $desktop) {
+      margin-bottom: 50px;
     }
   }
 }
