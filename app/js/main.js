@@ -3,6 +3,7 @@
 (function($) {
   $(document).ready(function() {
     // Code
+    let mathRes;
     let locate = window.location.pathname.split("/"),
       index = +locate.length - 1;
     if (locate[index] === "test-result.html") {
@@ -13,7 +14,6 @@
         resTextMath = $(".result__math--text"),
         resTextFantasy = $(".result__fantasy--text"),
         sumQuestion = JSON.parse(localStorage.getItem("SQ")),
-        mathRes,
         sumAns,
         fantasyRes,
         mathContainer = $(".result__math"),
@@ -54,9 +54,22 @@
       });
     }
     function profFn(num) {
-      let profDOM = ` <a href="${num.link}" class="result__button">${num.name}</a>`;
-
-      return profDOM;
+      if (mathRes > 50) {
+        let profDOM;
+        for (let i = 0; i < 3; i++) {
+          profDOM = ` <a href="${num[i].link}" class="result__button">${num[i].name}</a>`;
+        }
+        return profDOM;
+      } else if (mathRes < 50) {
+        let profDOM;
+        for (let i = 3; i < 6; i++) {
+          profDOM = ` <a href="${num[i].link}" class="result__button">${num[i].name}</a>`;
+        }
+        return profDOM;
+      } else {
+        let profDOM = ` <a href="${num.link}" class="result__button">${num.name}</a>`;
+        return profDOM;
+      }
     }
     ///end funcRes
     let ansMass = [],

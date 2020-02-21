@@ -343,14 +343,18 @@ header {
           align-items: center; }
 
 .info__svg .icon {
-  width: 100px;
-  display: block; }
+  width: 150px;
+  display: block;
+  margin-bottom: 20px; }
 
 .info__desc {
-  font-size: 14px;
-  padding: 0 60px 0 60px;
+  font-size: 16px;
+  padding: 0 50px 0 50px;
   margin-bottom: 60px;
   display: block; }
+  @media (max-width: 767px) {
+    .info__desc {
+      margin-bottom: 20px; } }
 
 .info__num {
   color: #4054b2; }
@@ -605,7 +609,7 @@ button {
     -webkit-box-pack: justify;
             justify-content: space-between;
     margin-bottom: 35px; }
-    .info__svg .icon {
+    .info__svg .icon--svg {
       margin-right: 10px;
       height: 45px;
       width: 45px; }
