@@ -48,28 +48,29 @@
         url: `https://my-json-server.typicode.com/Apis-tam/vnzProfDb/prof`,
         type: "GET"
       }).then(res => {
-        res.forEach(item => {
-          $(".result__prof").append(profFn(item));
-        });
+        profFn(res);
       });
     }
     function profFn(num) {
       if (mathRes > 50) {
         console.log("vjj");
         let profDOM;
-
-        profDOM = ` <a href="${num.link}" class="result__button">${num.name}</a>`;
-
-        return profDOM;
+        for (let i = 0; i < num.length - 2; i++) {
+          profDOM = ` <a href="${num[i].link}" class="result__button">${num[i].name}</a>`;
+          $(".result__prof").append(profDOM);
+        }
       } else if (mathRes < 50) {
         let profDOM;
-
-        profDOM = ` <a href="${num[4].link}" class="result__button">${num[4].name}</a>`;
-
-        return profDOM;
+        for (let i = 3; i < num.length; i++) {
+          profDOM = ` <a href="${num[i].link}" class="result__button">${num[i].name}</a>`;
+          $(".result__prof").append(profDOM);
+        }
       } else {
-        let profDOM = ` <a href="${num.link}" class="result__button">${num.name}</a>`;
-        return profDOM;
+        let profDOM;
+        for (let i = 0; i < num.length; i++) {
+          profDOM = ` <a href="${num.link}" class="result__button">${num.name}</a>`;
+          $(".result__prof").append(profDOM);
+        }
       }
     }
     ///end funcRes
