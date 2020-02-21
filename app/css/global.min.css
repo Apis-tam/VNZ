@@ -58,7 +58,7 @@ html {
 
 body,
 html {
-  min-height: 100%;
+  height: 100%;
   width: 100%; }
 
 .clear::after,
@@ -74,7 +74,20 @@ body {
   color: #333;
   font-weight: 400;
   -webkit-transition: all 0.4s;
-  transition: all 0.4s; }
+  transition: all 0.4s;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column; }
+
+.wrap {
+  -webkit-box-flex: 1;
+          flex: 1 0 auto; }
+
+footer,
+.footer {
+  flex-shrink: 0; }
 
 a,
 a:hover {
@@ -103,10 +116,6 @@ a:hover {
   display: inline-block; }
   .button:hover {
     background: #8c9eff; }
-
-.footer {
-  position: relative;
-  bottom: 0; }
 
 header {
   position: relative; }
@@ -467,55 +476,60 @@ button {
     font-weight: 500;
     font-size: 11px; }
 
-.test {
-  height: 100vh; }
-  .test__imgbox {
-    display: none;
-    text-align: center;
-    overflow: hidden; }
-    @media (min-width: 1024px) {
-      .test__imgbox {
-        display: block;
-        text-align: center; } }
-  .test__imgbox img {
-    max-width: 492px; }
-  .test__box {
-    display: -webkit-box;
-    display: flex; }
-    @media (max-width: 1024px) {
-      .test__box {
-        margin-top: 100px; } }
-  .test__img {
-    margin-top: 20px;
-    max-width: 165px; }
-    @media (min-width: 1024px) {
-      .test__img {
-        display: none; } }
-  .test__title {
-    font-weight: 500;
-    font-size: 18px;
-    margin: 30px 10px; }
-    @media (min-width: 1024px) {
-      .test__title {
-        margin: 140px 10px 20px 10px; } }
-  .test__info {
-    padding: 10px 0; }
-  .test__desc {
-    margin-bottom: 20px;
-    font-weight: normal;
-    font-size: 14px; }
-  .test__button {
-    font-weight: 400;
-    font-size: 14px;
-    color: #fff;
-    text-transform: uppercase;
-    background-color: #4054b2;
-    padding: 10px 15px;
-    border-radius: 20px;
-    display: inline-block;
-    margin: 10px 0 90px 28%; }
-    .test__button:hover {
-      background-color: #8c9eff; }
+.test__imgbox {
+  display: none;
+  text-align: center;
+  overflow: hidden; }
+  @media (min-width: 1024px) {
+    .test__imgbox {
+      display: block;
+      text-align: center; } }
+
+.test__imgbox img {
+  max-width: 492px; }
+
+.test__box {
+  display: -webkit-box;
+  display: flex; }
+  @media (max-width: 1024px) {
+    .test__box {
+      margin-top: 100px; } }
+
+.test__img {
+  margin-top: 20px;
+  max-width: 165px; }
+  @media (min-width: 1024px) {
+    .test__img {
+      display: none; } }
+
+.test__title {
+  font-weight: 500;
+  font-size: 18px;
+  margin: 30px 10px; }
+  @media (min-width: 1024px) {
+    .test__title {
+      margin: 140px 10px 20px 10px; } }
+
+.test__info {
+  padding: 10px 0; }
+
+.test__desc {
+  margin-bottom: 20px;
+  font-weight: normal;
+  font-size: 14px; }
+
+.test__button {
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #4054b2;
+  padding: 10px 15px;
+  border-radius: 20px;
+  display: inline-block;
+  margin: 10px 0 90px 28%; }
+  .test__button:hover {
+    background-color: #8c9eff; }
 
 .mail {
   text-align: center; }

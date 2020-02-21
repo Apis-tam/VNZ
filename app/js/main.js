@@ -42,7 +42,7 @@
       }
       //show choose button about prof///////////////////////
       let drowMail = JSON.parse(localStorage.getItem("mail"));
-      console.log(drowMail);
+
       $(".drow__mail")[0].innerText = drowMail;
       $.ajax({
         url: `https://my-json-server.typicode.com/Apis-tam/vnzProfDb/prof`,
@@ -55,16 +55,17 @@
     }
     function profFn(num) {
       if (mathRes > 50) {
+        console.log("vjj");
         let profDOM;
-        for (let i = 0; i < 3; i++) {
-          profDOM = ` <a href="${num[i].link}" class="result__button">${num[i].name}</a>`;
-        }
+
+        profDOM = ` <a href="${num.link}" class="result__button">${num.name}</a>`;
+
         return profDOM;
       } else if (mathRes < 50) {
         let profDOM;
-        for (let i = 3; i < 6; i++) {
-          profDOM = ` <a href="${num[i].link}" class="result__button">${num[i].name}</a>`;
-        }
+
+        profDOM = ` <a href="${num[4].link}" class="result__button">${num[4].name}</a>`;
+
         return profDOM;
       } else {
         let profDOM = ` <a href="${num.link}" class="result__button">${num.name}</a>`;
