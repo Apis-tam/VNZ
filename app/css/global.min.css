@@ -306,7 +306,7 @@ header {
       background-size: cover; } }
   .main__title {
     font-weight: 500;
-    font-size: 18px;
+    font-size: 28px;
     line-height: 21px;
     letter-spacing: 0.15px;
     margin: 120px 0 60px; }
@@ -315,7 +315,7 @@ header {
         margin: 150px 0 60px; } }
   .main__desc {
     font-weight: normal;
-    font-size: 14px;
+    font-size: 24px;
     line-height: 16px;
     margin-bottom: 10px;
     padding-bottom: 1px; }
@@ -799,6 +799,9 @@ label:hover {
 
 .blue {
   color: #4054b2; }
+
+.radio {
+  display: inline; }
 
 .result {
   width: 100%;
