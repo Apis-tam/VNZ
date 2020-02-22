@@ -100,7 +100,7 @@
     // on click button/////////////////
     $(".jstest__button").click(function() {
       let error = $(".jstest__error"),
-        msg = "Plaese, answer for all question!",
+        msg = "Дайте відповідь на всі запитання !",
         answers;
 
       if (ansMass.length == qLi.length) {
