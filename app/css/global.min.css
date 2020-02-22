@@ -295,19 +295,19 @@ header {
 .main {
   margin-top: 50px;
   padding: 1px 20px 1px 20px;
-  background: url("/images/head_bg.jpg") no-repeat;
+  background: url("../images/head_bg.jpg") no-repeat;
   background-size: contain;
   min-height: 50vh;
   background-size: cover; }
   @media (min-width: 767px) {
     .main {
       height: 100vh;
-      background: url("/images/head_desc_bg.jpg") no-repeat top center;
+      background: url("../images/head_desc_bg.jpg") no-repeat top center;
       background-size: cover; } }
   .main__title {
     font-weight: 500;
     font-size: 28px;
-    line-height: 21px;
+    line-height: 26px;
     letter-spacing: 0.15px;
     margin: 120px 0 60px; }
     @media (min-width: 1024px) {
@@ -316,12 +316,12 @@ header {
   .main__desc {
     font-weight: normal;
     font-size: 24px;
-    line-height: 16px;
+    line-height: 26px;
     margin-bottom: 10px;
     padding-bottom: 1px; }
   .main__button {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 20px;
     padding: 10px 15px;
     border-radius: 20px;
     text-transform: uppercase;
