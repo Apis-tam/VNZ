@@ -22,17 +22,41 @@
       border: 1px solid $blue;
     }
   }
-  &__box {
-    display: flex;
-  }
-  &__checkbox {
-    margin: 0px 10px;
-  }
   &__label {
+    display: flex;
     text-align: start;
     font-size: 12px;
     margin-bottom: 185px;
   }
+  &__checkbox {
+    display: none;
+    &:checked {
+      & ~ .mail__span {
+        &::after {
+          background-color: $blue;
+        }
+      }
+    }
+  }
+  &__span {
+    position: relative;
+    display: block;
+    width: 20px;
+    min-width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    margin-right: 10px;
+    &::after {
+      position: absolute;
+      top: 2px;
+      right: 2px;
+      bottom: 2px;
+      left: 2px;
+      content: "";
+      transition: all linear 0.4s;
+    }
+  }
+
   &__button {
     width: 180px;
     height: 36px;

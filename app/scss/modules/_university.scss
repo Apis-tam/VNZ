@@ -27,12 +27,7 @@
 }
 .uslider {
   width: 100%;
-  // &__item {
-  //   min-width: 100%;
-  //   @media (min-width: $mobile) {
-  //     width: 50vw;
-  //   }
-  // }
+
   &__slide {
     background-color: $bgGrey;
     margin: 30px;
@@ -70,12 +65,13 @@
   }
   &__link {
     @include pos($b: 5px, $l: 5px);
-    font-size: 12px;
+    font-size: 14px;
+    font-weight: 500;
     color: $blue;
 
     display: inline-block;
     &:hover {
-      color: $hoverList;
+      color: #000;
     }
   }
 }

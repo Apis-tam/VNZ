@@ -68,7 +68,7 @@
       } else {
         let profDOM;
         for (let i = 0; i < num.length; i++) {
-          profDOM = ` <a href="${num.link}" class="result__button">${num.name}</a>`;
+          profDOM = ` <a href="${num[i].link}" class="result__button">${num[i].name}</a>`;
           $(".result__prof").append(profDOM);
         }
       }

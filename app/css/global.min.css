@@ -424,11 +424,12 @@ header {
     position: absolute;
     bottom: 5px;
     left: 5px;
-    font-size: 12px;
+    font-size: 14px;
+    font-weight: 500;
     color: #4054b2;
     display: inline-block; }
     .uslider__link:hover {
-      color: rgba(0, 0, 0, 0.08); }
+      color: #000; }
 
 .slick-dots {
   display: -webkit-box;
@@ -550,15 +551,33 @@ button {
     border: 1px solid transparent; }
     .mail__input:focus {
       border: 1px solid #4054b2; }
-  .mail__box {
-    display: -webkit-box;
-    display: flex; }
-  .mail__checkbox {
-    margin: 0px 10px; }
   .mail__label {
+    display: -webkit-box;
+    display: flex;
     text-align: start;
     font-size: 12px;
     margin-bottom: 185px; }
+  .mail__checkbox {
+    display: none; }
+    .mail__checkbox:checked ~ .mail__span::after {
+      background-color: #4054b2; }
+  .mail__span {
+    position: relative;
+    display: block;
+    width: 20px;
+    min-width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    margin-right: 10px; }
+    .mail__span::after {
+      position: absolute;
+      top: 2px;
+      right: 2px;
+      bottom: 2px;
+      left: 2px;
+      content: "";
+      -webkit-transition: all linear 0.4s;
+      transition: all linear 0.4s; }
   .mail__button {
     width: 180px;
     height: 36px;
