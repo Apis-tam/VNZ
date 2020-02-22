@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="VNZ by Apis" />
+    <meta name="author" content="Apis" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <title>VNZ</title>
+
+    <link rel="icon" href="images/favicon.ico" />
+
+    <link rel="stylesheet" href="css/styles.min.css">
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="nav">
+          <div class="container">
+            <div class="nav__logo">
+              <svg class="icon">
+                <use xlink:href="images\svg_sprite\sprite.svg#logo"></use>
+              </svg>
+            </div>
+            <input type="checkbox" id="menu" class="navigation__input" />
+            <label for="menu" class="navigation__menu">
+              <i class="burger-menu"> <span> </span> </i
+            ></label>
+
+            <ul class="menu">
+              <li class="menu__item">
+                <a href="index.html" class="menu__link"> Головна</a>
+              </li>
+              <li class="menu__item">
+                <a href="test.html" class="menu__link">Тест</a>
+              </li>
+              <li class="menu__item">
+                <a href="index.html#university" class="menu__link"
+                  >Університети</a
+                >
+              </li>
+              <li class="menu__item">
+                <a href="index.html#prof" class="menu__link">Спеціальності</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="main">
+          <h1 class="main__title">
+            Вибір навчального закладу для здобуття вищої освіти
+          </h1>
+          <p class="main__desc">Не знаєш, яку професію обрати?</p>
+          <p class="main__desc">
+            Пройди тест та дізнайся, яка спеціальність підходить для тебе
+            найбільше
+          </p>
+          <a href="test-mail.html" class="main__button">перейти до тесту</a>
+        </div>
+      </header>
+      <section class="info">
+        <div class="container">
+          <div class="info__line"></div>
+          <div class="row">
+            <div class="col-12 col-md-4 ">
+              <div class="info__svg">
+                <svg class="icon">
+                  <use xlink:href="images\svg_sprite\sprite.svg#abc"></use>
+                </svg>
+                <p class="info__desc">
+                  <span class="info__num">4555</span> учасників пройшли тест на
+                  визначення майбутньої професії
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 ">
+              <div class="info__svg">
+                <svg class="icon">
+                  <use
+                    xlink:href="images\svg_sprite\sprite.svg#education"
+                  ></use>
+                </svg>
+                <p class="info__desc">
+                  <span class="info__num">660</span> вищих навчальних закладів,
+                  більше ніж <span class="info__num">3000</span>спеціальностей
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 ">
+              <div class="info__svg">
+                <svg class="icon">
+                  <use
+                    xlink:href="images\svg_sprite\sprite.svg#book_circle"
+                  ></use>
+                </svg>
+                <p class="info__desc">
+                  Отримай всю інформацію на пошту про ВУЗи та майбутню професію
+                  лише за
+                  <span class="info__num">10 хвилин</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="info__line"></div>
+        </div>
+      </section>
+      <section id="university" class="university">
+        <div class="university__box">
+          <h2 class="university__title">
+            Популярні університети
+          </h2>
+        </div>
+        <div class="uslider">
+          <div class="uslider__item">
+            <div class="uslider__slide">
+              <div class="uslider__img">
+                <img src="images/academy.jpg" alt="kuiv academy" />
+              </div>
+              <div class="uslider__info">
+                <h2 class="uslider__title">
+                  Міжрегіональна Академія Управління персоналом
+                </h2>
+                <p class="uslider__adress">
+                  Адреса: м.Київ, вул. Фрометівська, 2
+                </p>
+                <a href="institutu.html" class="uslider__link">Детальніше</a>
+              </div>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div class="uslider__item">
+            <div class="uslider__slide">
+              <div class="uslider__img">
+                <img src="images/shevchenko.jpg" alt="shevchenko university " />
+              </div>
+              <div class="uslider__info">
+                <h2 class="uslider__title">
+                  Киівський національний університет імені Т.Г.Шевченка
+                </h2>
+                <p class="uslider__adress">
+                  Адреса: м.Київ, вул.Володимирська,60
+                </p>
+                <a href="institutu.html" class="uslider__link">Детальніше</a>
+              </div>
+            </div>
+          </div>
+          <!-- 3 -->
+          <div class="uslider__item">
+            <div class="uslider__slide">
+              <div class="uslider__img">
+                <img
+                  src="images/franko.jpg"
+                  alt="ivan franko Lviv university"
+                />
+              </div>
+              <div class="uslider__info">
+                <h2 class="uslider__title">
+                  Львівський університет імені Івана Франка
+                </h2>
+                <p class="uslider__adress">
+                  Адреса: м.Львів, вул.Університетська,1
+                </p>
+                <a href="institutu.html" class="uslider__link">Детальніше</a>
+              </div>
+            </div>
+          </div>
+          <!-- 4 -->
+          <div class="uslider__item">
+            <div class="uslider__slide">
+              <div class="uslider__img">
+                <img
+                  src="images/karazina.png"
+                  alt="Karazina national university"
+                />
+              </div>
+              <div class="uslider__info">
+                <h2 class="uslider__title">
+                  Харківський національний університет імені В.Н. Каразіна
+                </h2>
+                <p class="uslider__adress">
+                  Адреса:м.Харків, майдан Свободи, 4
+                </p>
+                <a href="institutu.html" class="uslider__link">Детальніше</a>
+              </div>
+            </div>
+          </div>
+          <!-- repeat -->
+          <div class="uslider__item">
+            <div class="uslider__slide">
+              <div class="uslider__img">
+                <img src="images/academy.jpg" alt="kuiv academy" />
+              </div>
+              <div class="uslider__info">
+                <h2 class="uslider__title">
+                  Міжрегіональна Академія Управління персоналом
+                </h2>
+                <p class="uslider__adress">
+                  Адреса: м.Київ, вул. Фрометівська, 2
+                </p>
+                <a href="institutu.html" class="uslider__link">Детальніше</a>
+              </div>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div class="uslider__item">
+            <div class="uslider__slide">
+              <div class="uslider__img">
+                <img src="images/shevchenko.jpg" alt="shevchenko university " />
+              </div>
+              <div class="uslider__info">
+                <h2 class="uslider__title">
+                  Киівський національний університет імені Т.Г.Шевченка
+                </h2>
+                <p class="uslider__adress">
+                  Адреса: м.Київ, вул.Володимирська,60
+                </p>
+                <a href="institutu.html" class="uslider__link">Детальніше</a>
+              </div>
+            </div>
+          </div>
+          <!-- 3 -->
+        </div>
+        <div class="university__link">
+          <a href="test-mail.html" class="university__button">Підібрати вуз</a>
+        </div>
+      </section>
+
+      <!-- slider number 2//////////////// -->
+      <section id="prof" class="university">
+        <div class="university__box">
+          <h2 class="university__title">
+            Популярні спеціальності
+          </h2>
+        </div>
+        <div class="uslider">
+          <div class="uslider__item">
+            <div class="uslider__slide">
+              <div class="uslider__img">
+                <img src="/images/programist.jpg" alt="developer" />
+              </div>
+              <div class="uslider__info">
+                <h2 class="uslider__title">
+                  Інженер IT,програміст
+                </h2>
+                <p class="uslider__adress">
+                  Розроблює технологію розв’язання задачі на всіх етапах.
+                  Здійснює вибір мови програмування і переклад нею алгоритмів
+                  задач.
+                </p>
+                <a href="institutu.html" class="uslider__link">Детальніше</a>
+              </div>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div class="uslider__item">
+            <div class="uslider__slide">
+              <div class="uslider__img">
+                <img src="images/calculator-man.png" alt=" calculator man" />
+              </div>
+              <div class="uslider__info">
+                <h2 class="uslider__title">
+                  Бухгалтер
+                </h2>
+                <p class="uslider__adress">
+                  Проводить касові операції, розраховує заробітну плату
+                  співробітників, податкові відрахування, собівартість продукції
+                  та оклади.
+                </p>
+                <a href="institutu.html" class="uslider__link">Детальніше</a>
+              </div>
+            </div>
+          </div>
+          <!-- 3 -->
+          <div class="uslider__item">
+            <div class="uslider__slide">
+              <div class="uslider__img">
+                <img src="/images/pr.png" alt="pr manager" />
+              </div>
+              <div class="uslider__info">
+                <h2 class="uslider__title">
+                  Менеджер з реклами і РR, маркетолог
+                </h2>
+                <p class="uslider__adress">
+                  Планує і керує рекламною діяльністю виходячи з цілей клієнтів
+                  і їхніх фінансових можливостей; координує діяльність
+                  рекламного агентства
+                </p>
+                <a href="institutu.html" class="uslider__link">Детальніше</a>
+              </div>
+            </div>
+          </div>
+          <!-- 4 -->
+          <div class="uslider__item">
+            <div class="uslider__slide">
+              <div class="uslider__img">
+                <img src="images/archi.png" alt="archtector engeeniar" />
+              </div>
+              <div class="uslider__info">
+                <h2 class="uslider__title">
+                  Архітектор
+                </h2>
+                <p class="uslider__adress">
+                  Придумує основну концепцію будівлі, його зовнішність, пов'язує
+                  воєдино всі нюанси. Завдання - спроектувати споруду, що
+                  максимально відповідає потребам замовника.
+                </p>
+                <a href="institutu.html" class="uslider__link">Детальніше</a>
+              </div>
+            </div>
+          </div>
+          <!-- repeat -->
+          <div class="uslider__item">
+            <div class="uslider__slide">
+              <div class="uslider__img">
+                <img src="/images/programist.jpg" alt="developer" />
+              </div>
+              <div class="uslider__info">
+                <h2 class="uslider__title">
+                  Інженер IT,програміст
+                </h2>
+                <p class="uslider__adress">
+                  Розроблює технологію розв’язання задачі на всіх етапах.
+                  Здійснює вибір мови програмування і переклад нею алгоритмів
+                  задач.
+                </p>
+                <a href="institutu.html" class="uslider__link">Детальніше</a>
+              </div>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div class="uslider__item">
+            <div class="uslider__slide">
+              <div class="uslider__img">
+                <img src="images/calculator-man.png" alt="calculator man " />
+              </div>
+              <div class="uslider__info">
+                <h2 class="uslider__title">
+                  Бухгалтер
+                </h2>
+                <p class="uslider__adress">
+                  Проводить касові операції, розраховує заробітну плату
+                  співробітників, податкові відрахування, собівартість продукції
+                  та оклади.
+                </p>
+                <a href="institutu.html" class="uslider__link">Детальніше</a>
+              </div>
+            </div>
+          </div>
+          <!-- 3 -->
+          <div class="uslider__item">
+            <div class="uslider__slide">
+              <div class="uslider__img">
+                <img src="/images/pr.png" alt="pr manager" />
+              </div>
+              <div class="uslider__info">
+                <h2 class="uslider__title">
+                  Менеджер з реклами і РR, маркетолог
+                </h2>
+                <p class="uslider__adress">
+                  Планує і керує рекламною діяльністю виходячи з цілей клієнтів
+                  і їхніх фінансових можливостей; координує діяльність
+                  рекламного агентства
+                </p>
+                <a href="institutu.html" class="uslider__link">Детальніше</a>
+              </div>
+            </div>
+          </div>
+          <!-- 4 -->
+          <div class="uslider__item">
+            <div class="uslider__slide">
+              <div class="uslider__img">
+                <img src="images/archi.png" alt="archtector engeeniar" />
+              </div>
+              <div class="uslider__info">
+                <h2 class="uslider__title">
+                  Архітектор
+                </h2>
+                <p class="uslider__adress">
+                  Придумує основну концепцію будівлі, його зовнішність, пов'язує
+                  воєдино всі нюанси. Завдання - спроектувати споруду, що
+                  максимально відповідає потребам замовника.
+                </p>
+                <a href="institutu.html" class="uslider__link">Детальніше</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="university__link">
+          <a href="test-mail.html" class="university__button"
+            >підібрати спеціальність</a
+          >
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <ul class="footer__menu">
+        <li class="footer__item">
+          <a href="index.html#university" class="footer__link">Університети</a>
+        </li>
+        <li class="footer__item">
+          <a href="index.html#prof" class="footer__link">Спеціальності</a>
+        </li>
+        <li class="footer__item">
+          <a href="test-mail.html" class="footer__link">Тест</a>
+        </li>
+      </ul>
+      <ul class="footer__menu">
+        <li class="footer__item">
+          <a href="#" class="footer__link">2019-2020</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Політика конфіденційності</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Cookies Policy</a>
+        </li>
+      </ul>
+    </footer>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

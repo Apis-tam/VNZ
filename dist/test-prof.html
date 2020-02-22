@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="VNZ by Apis" />
+    <meta name="author" content="Apis" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <title>VNZ</title>
+
+    <link rel="icon" href="images/favicon.ico" />
+
+    <link rel="stylesheet" href="css/styles.min.css">
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="nav">
+          <div class="container">
+            <div class="nav__logo">
+              <svg class="icon">
+                <use xlink:href="images\svg_sprite\sprite.svg#logo"></use>
+              </svg>
+            </div>
+            <input type="checkbox" id="menu" class="navigation__input" />
+            <label for="menu" class="navigation__menu">
+              <i class="burger-menu"> <span> </span> </i
+            ></label>
+
+            <ul class="menu">
+              <li class="menu__item">
+                <a href="index.html" class="menu__link"> Головна</a>
+              </li>
+              <li class="menu__item">
+                <a href="test.html" class="menu__link">Тест</a>
+              </li>
+              <li class="menu__item">
+                <a href="index.html#university" class="menu__link"
+                  >Університети</a
+                >
+              </li>
+              <li class="menu__item">
+                <a href="index.html#prof" class="menu__link">Спеціальності</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <section class="jstest">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6 jstest__imgbox">
+              <img
+                src="images/test_prof.jpg"
+                class="jstest__img"
+                alt="test professional"
+              />
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="jstest__box">
+                <div class="jstest__icon">
+                  <svg class="icon">
+                    <use
+                      xlink:href="images\svg_sprite\sprite.svg#pen_hand"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="jstest__title">
+                  <h1>Тест Визначення професійних уподобань</h1>
+                </div>
+              </div>
+              <div class="jstest__test">
+                <div class="jstest__bar">
+                  <span class="jstest__bar--text"></span>
+                  <div class="jstest__bar--line"></div>
+                </div>
+                <!-- js code start -->
+                <form action="#" class="quiz__q">
+                  <ul class="quiz__ul">
+                    <li class="quiz__quest">
+                      <span
+                        >Уявіть, що ви на виставці.Що вас найбільше приваблює в
+                        експонатах?</span
+                      >
+
+                      <p>
+                        <label class="quiz__label">
+                          <input
+                            class="radio"
+                            type="radio"
+                            name="q1"
+                            value="0"
+                          />
+                          колір, досконалість форм</label
+                        >
+                      </p>
+                      <p>
+                        <label class="quiz__label">
+                          <input
+                            class="radio"
+                            type="radio"
+                            name="q1"
+                            value="10"
+                          />
+                          як і з чого вони зроблені</label
+                        >
+                      </p>
+                      <p>
+                        <label class="quiz__label">
+                          <input
+                            class="radio"
+                            type="radio"
+                            name="q1"
+                            value="5"
+                          />
+                          що хотів висловити автор
+                        </label>
+                      </p>
+                      <!-- </form> -->
+                    </li>
+                    <li class="quiz__quest">
+                      <span> Якій нагороді ви б зраділи найбільше?</span>
+                      <!-- <form action="#" class="quiz__q"> -->
+                      <p>
+                        <label class="quiz__label">
+                          <input
+                            class="radio"
+                            type="radio"
+                            name="q2"
+                            value="5"
+                          />
+                          за громадську діяльність.</label
+                        >
+                      </p>
+                      <p>
+                        <label class="quiz__label">
+                          <input
+                            class="radio"
+                            type="radio"
+                            name="q2"
+                            value="10"
+                          />
+                          за науковий винахід</label
+                        >
+                      </p>
+                      <p>
+                        <label class="quiz__label">
+                          <input
+                            class="radio"
+                            type="radio"
+                            name="q2"
+                            value="0"
+                          />
+                          за художній твір</label
+                        >
+                      </p>
+                      <!-- </form> -->
+                    </li>
+                    <li class="quiz__quest">
+                      <!-- <form action="#" class="quiz__q"> -->
+                      <span>Яким журналам надаєте перевагу?</span>
+                      <p>
+                        <label class="quiz__label">
+                          <input
+                            class="radio"
+                            type="radio"
+                            name="q3"
+                            value="0"
+                          />
+                          літeратурно-художні</label
+                        >
+                      </p>
+                      <p>
+                        <label class="quiz__label">
+                          <input
+                            class="radio"
+                            type="radio"
+                            name="q3"
+                            value="10"
+                          />
+                          наукові</label
+                        >
+                      </p>
+                      <p>
+                        <label class="quiz__label">
+                          <input
+                            class="radio"
+                            type="radio"
+                            name="q3"
+                            value="5"
+                          />
+                          історичні</label
+                        >
+                      </p>
+                      <!-- </form> -->
+                    </li>
+                    <li class="quiz__quest">
+                      <!-- <form action="#" class="quiz__q"> -->
+                      <span>Сьогодні ви дома один, що ві будете робити?</span>
+                      <p>
+                        <label class="quiz__label">
+                          <input
+                            class="radio"
+                            type="radio"
+                            name="q4"
+                            value="5"
+                          />
+                          Відпочивати,дивитися фільми</label
+                        >
+                      </p>
+                      <p>
+                        <label class="quiz__label">
+                          <input
+                            class="radio"
+                            type="radio"
+                            name="q4"
+                            value="10"
+                          />
+                          Почните виконувати давно заплановані справи</label
+                        >
+                      </p>
+                      <p>
+                        <label class="quiz__label">
+                          <input
+                            class="radio"
+                            type="radio"
+                            name="q4"
+                            value="0"
+                          />
+
+                          зустрінетесь із друзями</label
+                        >
+                      </p>
+                      <!-- </form> -->
+                    </li>
+                    <li class="quiz__quest">
+                      <!-- <form action="#" class="quiz__q"> -->
+                      <span>Ніч для Вас -це ..</span>
+                      <p>
+                        <label class="quiz__label">
+                          <input
+                            class="radio"
+                            type="radio"
+                            name="q5"
+                            value="5"
+                          />
+                          Час відпочинку,спокою</label
+                        >
+                      </p>
+                      <p>
+                        <label class="quiz__label">
+                          <input
+                            class="radio"
+                            type="radio"
+                            name="q5"
+                            value="0"
+                          />
+                          Чудовий момент по мріяти, вигадати щось нове</label
+                        >
+                      </p>
+                      <p>
+                        <label class="quiz__label">
+                          <input
+                            class="radio"
+                            type="radio"
+                            name="q5"
+                            value="10"
+                          />
+                          час коли потрібно виспатись після тяжкого робочого
+                          дня</label
+                        >
+                      </p>
+                      <!-- </form> -->
+                    </li>
+                    <li class="quiz__quest">
+                      <!-- <form action="#" class="quiz__q"> -->
+                      <span
+                        >Ви щойно склали екзамен, і Вам здається, що сдали його
+                        добре. Але ви отримали оцінку нижче середньої :</span
+                      >
+                      <p>
+                        <label class="quiz__label">
+                          <input
+                            class="radio"
+                            type="radio"
+                            name="q6"
+                            value="0"
+                          />
+                          Ви подумаєте, що відбулась помилка, розпочните діалог
+                          с єкзаменатором,щоб він ще раз перевірив Вашу роботу
+                        </label>
+                      </p>
+                      <p>
+                        <label class="quiz__label">
+                          <input
+                            class="radio"
+                            type="radio"
+                            name="q6"
+                            value="5"
+                          />
+                          Вам соромно, Ви впадаєте в депрессію.</label
+                        >
+                      </p>
+                      <p>
+                        <label class="quiz__label">
+                          <input
+                            class="radio"
+                            type="radio"
+                            name="q6"
+                            value="10"
+                          />
+                          Ви незадоволені собою і приймаете рішення сісти за
+                          навчання</label
+                        >
+                      </p>
+                      <!-- </form> -->
+                    </li>
+                    <li class="quiz__quest">
+                      <!-- <form action="#" class="quiz__q"> -->
+                      <span>Ви застрягли у ліфті :</span>
+                      <p>
+                        <label class="quiz__label">
+                          <input
+                            class="radio"
+                            type="radio"
+                            name="q7"
+                            value="10"
+                          />
+                          Ви починаете думати щоб могло зламатися, і яка
+                          конструкція луфту</label
+                        >
+                      </p>
+                      <p>
+                        <label class="quiz__label">
+                          <input
+                            class="radio"
+                            type="radio"
+                            name="q7"
+                            value="0"
+                          />
+                          почните фантазувати, мріяти як проведете відпустку
+                          поки чекаєте майстра</label
+                        >
+                      </p>
+                      <p>
+                        <label class="quiz__label">
+                          <input
+                            class="radio"
+                            type="radio"
+                            name="q7"
+                            value="5"
+                          />
+                          ви почните хвилюватися, і думати про негативні
+                          наслідки цієї події</label
+                        >
+                      </p>
+                      <!-- </form> -->
+                    </li>
+                    <li class="quiz__quest">
+                      <!-- <form action="#" class="quiz__q"> -->
+                      <span>Ваш холодильник працює с кожним днем гірше</span>
+                      <p>
+                        <label class="quiz__label">
+                          <input
+                            class="radio"
+                            type="radio"
+                            name="q8"
+                            value="10"
+                          />
+                          Ви починаєте моніторити ціни на холодильники, не
+                          чекаючи остаточної поломки</label
+                        >
+                      </p>
+                      <p>
+                        <label class="quiz__label">
+                          <input
+                            class="radio"
+                            type="radio"
+                            name="q8"
+                            value="5"
+                          />
+                          Ви не приділяете цьому великого значення, коли
+                          зламається тоді почните вирішувати цю проблему</label
+                        >
+                      </p>
+                      <p>
+                        <label class="quiz__label">
+                          <input
+                            class="radio"
+                            type="radio"
+                            name="q8"
+                            value="0"
+                          />
+                          Ви його помиєте, та переведете його у єкономічний
+                          режим</label
+                        >
+                      </p>
+                      <!-- </form> -->
+                    </li>
+                    <li class="quiz__quest">
+                      <!-- <form action="#" class="quiz__q"> -->
+                      <span>Завтра Ви летите на відпочинок :</span>
+                      <p>
+                        <label class="quiz__label">
+                          <input
+                            class="radio"
+                            type="radio"
+                            name="q9"
+                            value="10"
+                          />
+                          Ви превіряете всі речі що зібрали, плануете
+                          маршрут</label
+                        >
+                      </p>
+                      <p>
+                        <label class="quiz__label">
+                          <input
+                            class="radio"
+                            type="radio"
+                            name="q9"
+                            value="0"
+                          />
+                          Майже весь час думаєте як Ви будете відпочивати
+                        </label>
+                      </p>
+                      <p>
+                        <label class="quiz__label">
+                          <input
+                            class="radio"
+                            type="radio"
+                            name="q9"
+                            value="5"
+                          />
+                          Ви спокійні, ставите будильник на потрібну Вам
+                          годину</label
+                        >
+                      </p>
+                      <!-- </form> -->
+                    </li>
+                    <li class="quiz__quest">
+                      <!-- <form action="#" class="quiz__q"> -->
+                      <span>Ви на роботі , вам кажуть погану новину:</span>
+                      <p>
+                        <label class="quiz__label">
+                          <input
+                            class="radio"
+                            type="radio"
+                            name="q10"
+                            value="10"
+                          />
+                          Ви сідаєте за роботу стиснув зуби</label
+                        >
+                      </p>
+                      <p>
+                        <label class="quiz__label">
+                          <input
+                            class="radio"
+                            type="radio"
+                            name="q10"
+                            value="0"
+                          />
+                          Ви вийдите на свіже повітря та наберете друга</label
+                        >
+                      </p>
+                      <p>
+                        <label class="quiz__label">
+                          <input
+                            class="radio"
+                            type="radio"
+                            name="q10"
+                            value="5"
+                          />
+                          Ви візьмите відгул</label
+                        >
+                      </p>
+                    </li>
+                  </ul>
+                </form>
+                <button class="jstest__button">Отримати результат</button>
+                <div class="jstest__error"></div>
+                <!-- js code end -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <ul class="footer__menu">
+        <li class="footer__item">
+          <a href="index.html#university" class="footer__link">Університети</a>
+        </li>
+        <li class="footer__item">
+          <a href="index.html#prof" class="footer__link">Спеціальності</a>
+        </li>
+        <li class="footer__item"><a href="#" class="footer__link">Тест</a></li>
+      </ul>
+      <ul class="footer__menu">
+        <li class="footer__item">
+          <a href="#" class="footer__link">2019-2020</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Політика конфіденційності</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Cookies Policy</a>
+        </li>
+      </ul>
+    </footer>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
